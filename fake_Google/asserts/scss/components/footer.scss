@@ -1,0 +1,36 @@
+
+footer{
+  background: #eee;
+
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  nav{
+      padding: 20px;
+    &:after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    ul{
+      float: left;
+      li{
+        display: inline;
+        a{
+        color: #000;
+        padding: 10px;
+        text-decoration: none;
+        &:hover{
+          text-decoration:underline;
+        }
+
+        }
+      }
+    }
+
+  }
+}
+.right  {
+  float: right;
+  text-align: right;
+}

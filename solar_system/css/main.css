@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+  width: 100%; }
+
+@keyframes starPulse {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.2; } }
+@keyframes sunFire {
+  from {
+    box-shadow: 0 0 50px #f5c91a; }
+  to {
+    box-shadow: 0 0 100px #f5c91a; } }
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+#universe {
+  background: black;
+  background: -webkit-radial-gradient(#555, #000);
+  background: -moz-radial-gradient(#555, #000);
+  background: -o-radial-gradient(#555, #000);
+  background: radial-gradient(#555, #000); }
+
+#stars {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  background: url("../images/stars.png");
+  animation: starPulse 2.5s infinite alternate; }
+
+#sun {
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  z-index: 4;
+  position: absolute;
+  border-radius: 100%;
+  background-color: orange;
+  background: -webkit-radial-gradient(#f5c313, #ec7e08);
+  background: -moz-radial-gradient(#f5c313, #ec7e08);
+  background: -o-radial-gradient(#f5c313, #ec7e08);
+  background: radial-gradient(#f5c313, #ec7e08);
+  animation: sunFire 2.5s infinite alternate;
+  box-shadow: 0 0 50px #f5c91a; }
+
+#earthOrbit {
+  height: 700px;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 80%;
+  margin-top: -300px;
+  margin-left: -300px;
+  z-index: 4;
+  animation: spin 30s linear infinite; }
+
+#earth {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -40px;
+  animation: spin 3s linear infinite; }
+
+#moonOrbit {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  border-radius: 100%;
+  margin-top: -60px;
+  z-index: 4px;
+  animation: spin 30s linear infinite; }
+
+#moon {
+  height: 20px;
+  width: 20px;
+  background: gray;
+  border-radius: 75%;
+  background: -webkit-radial-gradient(#ddd, #888);
+  background: -moz-radial-gradient(#ddd, #888);
+  background: -o-radial-gradient(#ddd, #888);
+  background: radial-gradient(#ddd, #888); }
+
+/*# sourceMappingURL=main.css.map */

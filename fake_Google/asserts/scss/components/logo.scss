@@ -1,0 +1,61 @@
+//Google Logo
+
+.container {
+  margin: 0 auto;
+  width: 580px;
+  text-align: center;
+  padding-top: 109px;
+
+  input[type="search"] {
+    width: 100%;
+    padding: 7px;
+    margin-top: 25px;
+  }
+
+  input[type="button"] {
+    display: inline-block;
+    text-align: center;
+    padding: 0 16px;
+    line-height: 27px;
+    font-size: 13px;
+    font-weight: bold;
+    height: 36px;
+    color: #757575;
+    border: solid 1px #f2f2f2;
+    background-color: #f2f2f2;
+    margin: 11px 4px;
+
+    &:before{
+
+    }
+    &:after{
+
+    }
+    &:hover {
+      color: black;
+      cursor: pointer;
+
+
+    }
+  }
+
+  p {
+    small {
+      margin: 10px 0 0;
+      font-size: 12px;
+      a{
+        color: blue;
+      }
+    }
+  }
+}
+
+.logo {
+  h1 {
+    width: 269px;
+    height: 95px;
+    background: url("../images/google.png") top left no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+  }
+}

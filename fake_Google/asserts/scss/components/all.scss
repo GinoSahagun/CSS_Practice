@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+}
+
+//Componenets
+@import "header";
+@import "logo";
+@import "footer";
